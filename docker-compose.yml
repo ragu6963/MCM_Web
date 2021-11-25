@@ -1,0 +1,27 @@
+version: "3"
+services:
+  websocket:
+    container_name: wb
+    build:
+      context: websocket/.
+    ports:
+      - "3000:3000"
+    volumes:
+      - /var/lib/docker/volumes:/app/keys # SSL 인증서
+      - ./websocket/:/app
+      - /app/node_modules
+  frontend:
+    container_name: fe
+    build:
+      context: frontend/.
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/lib/docker/volumes:/var/www/html # SSL 인증서
+  backend:
+    container_name: be
+    build:
+      context: backend/.
+    ports:
+      - "8443:8443"

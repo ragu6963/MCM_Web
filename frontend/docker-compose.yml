@@ -1,0 +1,11 @@
+version: "3"
+services:
+  frontend:
+    container_name: fe
+    build:
+      context: ./
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/lib/docker/volumes:/var/www/html

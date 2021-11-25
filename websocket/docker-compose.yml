@@ -1,0 +1,12 @@
+version: '3'
+services:
+  websocket:
+    container_name: wb
+    build:
+      context: /.
+    ports:
+      - '3000:3000'
+    volumes:
+      - /var/lib/docker/volumes:/app/keys
+      - ./:/app
+      - /app/node_modules

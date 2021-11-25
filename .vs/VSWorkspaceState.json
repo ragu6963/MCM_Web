@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\unity",
+    "\\unity\\Assets",
+    "\\unity\\Assets\\Scripts",
+    "\\unity\\Assets\\Scripts\\Lobby",
+    "\\unity\\Assets\\Scripts\\Museum",
+    "\\unity\\Assets\\Scripts\\Museum\\Exhibits",
+    "\\unity\\Assets\\Scripts\\Museum\\Managers",
+    "\\unity\\Assets\\Scripts\\Pong",
+    "\\unity\\Assets\\Scripts\\Tetris"
+  ],
+  "SelectedNode": "\\unity\\Assets\\Scripts\\Tetris\\TGameManager.cs",
+  "PreviewInSolutionExplorer": false
+}
